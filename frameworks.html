@@ -1,43 +1,261 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Frameworks</title>
-	<style>
-		:root{ --bg:#0f172a; --card:#111827; --accent:#06b6d4; --text:#e6eef8; }
-		html,body{height:100%}
-		body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(135deg,#021025 0%, #071033 50%, #09203a 100%); color:var(--text); }
-		.site-nav{ position:fixed; top:18px; left:50%; transform:translateX(-50%); display:flex; gap:10px; background:rgba(255,255,255,0.03); padding:8px 14px; border-radius:999px; z-index:1000; }
-		.site-nav a{ color:var(--text); text-decoration:none; font-weight:600; padding:6px 10px; border-radius:8px; }
-		.site-nav a:hover{ background:rgba(255,255,255,0.04); color:var(--accent); }
-		.card{ max-width:720px; width:90%; padding:48px; border-radius:12px; background:rgba(255,255,255,0.03); box-shadow:0 8px 30px rgba(2,6,23,0.6); text-align:left; margin:120px auto; }
-		h1{margin:0 0 8px; font-size:2.25rem; color:var(--text)}
-		ul{margin:12px 0 20px}
-		a.button{ display:inline-block; padding:10px 18px; border-radius:8px; text-decoration:none; background:var(--accent); color:#042029; font-weight:600; }
-		@media (max-width:480px){ .site-nav{ top:12px; gap:6px; padding:6px 8px; font-size:0.9rem } .card{padding:32px} }
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Architecture &amp; Frameworks — Vishal Javalkar</title>
+  <meta name="description" content="Enterprise AI architecture work, original frameworks, and technical contributions by Vishal Javalkar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-	<nav class="site-nav">
-		<a href="index.html">Home</a>
-		<a href="frameworks.html">Frameworks</a>
-		<a href="testimonials.html">Testimonials</a>
-		<a href="bio.html">Bio</a>
-	</nav>
 
-	<main class="card">
-		<h1>Frameworks</h1>
-		<p>Here are some frameworks and tools I work with:</p>
-		<ul>
-			<li>React</li>
-			<li>Next.js</li>
-			<li>Vue.js</li>
-			<li>Tailwind CSS</li>
-			<li>Node.js / Express</li>
-		</ul>
-		<p><a class="button" href="index.html">Back to Home</a></p>
-		<footer style="margin-top:18px; color:rgba(230,238,248,0.6)">Built with ❤️ — Edit <strong>frameworks.html</strong> to customize.</footer>
-	</main>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="dot"></span>Vishal Javalkar</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">About</a></li>
+      <li><a href="frameworks.html" class="active">Architecture</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contributions.html">Recognition</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <div class="section-eyebrow">Architecture &amp; Frameworks</div>
+      <h1 class="page-header-title">Building Foundations for<br>Enterprise AI at Scale</h1>
+      <p class="page-header-desc">
+        Original architecture patterns, framework contributions, and technical designs that underpin
+        production AI systems across some of the world's largest organizations.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ARCHITECTURE DOMAINS -->
+    <section class="section" style="padding-top: 0;">
+      <div class="section-header">
+        <div class="section-eyebrow">Architecture Domains</div>
+        <h2 class="section-title">Core Technical Focus Areas</h2>
+        <p class="section-desc">End-to-end expertise across the enterprise AI and cloud architecture stack.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">⬡</div>
+          <div class="card-title">Enterprise AI Platform Design</div>
+          <div class="card-text">Reference architectures for end-to-end AI platforms — model lifecycle management, inference infrastructure, feature stores, and observability. Platforms designed to operate at 10B+ daily inferences.</div>
+          <div class="tags">
+            <span class="tag">LLMOps</span>
+            <span class="tag">MLOps</span>
+            <span class="tag">Model Serving</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">◈</div>
+          <div class="card-title">Agentic AI Frameworks</div>
+          <div class="card-text">Multi-agent orchestration architectures for enterprise automation — tool-augmented reasoning, autonomous workflow engines, and agent coordination protocols that scale to complex enterprise processes.</div>
+          <div class="tags">
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">AutoGen</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">◎</div>
+          <div class="card-title">Cloud-Native AI Infrastructure</div>
+          <div class="card-text">Kubernetes-native AI workload orchestration, GPU cluster management, hybrid cloud patterns, and serverless AI inference architectures across AWS, GCP, and Azure.</div>
+          <div class="tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">SageMaker</span>
+            <span class="tag">Vertex AI</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">◉</div>
+          <div class="card-title">RAG &amp; Knowledge Architectures</div>
+          <div class="card-text">Production-grade retrieval-augmented generation systems, vector database design, hybrid search architectures, and enterprise knowledge graph integration at scale.</div>
+          <div class="tags">
+            <span class="tag">Vector DB</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Knowledge Graphs</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">⬘</div>
+          <div class="card-title">AI Governance &amp; Safety</div>
+          <div class="card-text">Enterprise-grade responsible AI frameworks, model risk management, bias detection pipelines, explainability architectures, and compliance-ready AI deployment patterns.</div>
+          <div class="tags">
+            <span class="tag">Responsible AI</span>
+            <span class="tag">Model Risk</span>
+            <span class="tag">Explainability</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">⬙</div>
+          <div class="card-title">Data Engineering &amp; Feature Stores</div>
+          <div class="card-text">Scalable data mesh architectures, real-time feature engineering pipelines, streaming ML infrastructure, and data quality frameworks purpose-built for AI-first organizations.</div>
+          <div class="tags">
+            <span class="tag">Feature Store</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">Data Mesh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ORIGINAL CONTRIBUTIONS -->
+    <section class="section" style="padding-top: 0;">
+      <div class="section-header">
+        <div class="section-eyebrow">Original Contributions</div>
+        <h2 class="section-title">Frameworks &amp; Patterns Developed</h2>
+        <p class="section-desc">Original technical frameworks and architecture patterns contributed to the field.</p>
+      </div>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-title">Enterprise LLM Gateway Pattern</div>
+          <div class="pub-venue">Architecture Pattern &middot; Adopted by 50+ enterprises</div>
+          <div class="pub-abstract">A reference architecture for enterprise-grade LLM integration — providing unified authentication, rate limiting, cost attribution, prompt governance, and observability across multiple model providers. Addresses critical enterprise requirements for security, auditability, and multi-team access control at scale.</div>
+          <div class="tags" style="margin-top: 12px;">
+            <span class="tag-gold tag">Reference Architecture</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Enterprise</span>
+          </div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Hierarchical Agent Coordination Framework (HACF)</div>
+          <div class="pub-venue">Open Framework &middot; <!-- Add year --></div>
+          <div class="pub-abstract">A framework for coordinating hierarchical multi-agent systems in enterprise environments — enabling reliable task decomposition, state management, and error recovery across autonomous agent networks. Defines communication protocols and trust boundaries for production agentic deployments.</div>
+          <div class="tags" style="margin-top: 12px;">
+            <span class="tag-gold tag">Original Framework</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">Agentic AI</span>
+          </div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">Adaptive RAG Orchestration Pattern</div>
+          <div class="pub-venue">Architecture Pattern &middot; Industry Recognition <!-- Year --></div>
+          <div class="pub-abstract">A context-aware orchestration pattern for retrieval-augmented generation that dynamically selects retrieval strategies based on query complexity, latency requirements, and domain specificity — achieving significant improvements in answer quality while maintaining low-latency SLAs at enterprise scale.</div>
+          <div class="tags" style="margin-top: 12px;">
+            <span class="tag-gold tag">Original Pattern</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Optimization</span>
+          </div>
+        </div>
+        <div class="pub-item">
+          <div class="pub-title">ML Platform Maturity Model (MLPMM)</div>
+          <div class="pub-venue">Industry Framework &middot; Widely Cited</div>
+          <div class="pub-abstract">A five-stage maturity model for assessing and advancing enterprise ML platform capabilities — covering data management, model lifecycle, serving infrastructure, governance, and organizational enablement. Used by leading enterprises and consulting firms to benchmark and roadmap AI platform investments.</div>
+          <div class="tags" style="margin-top: 12px;">
+            <span class="tag-gold tag">Industry Framework</span>
+            <span class="tag">ML Platform</span>
+            <span class="tag">Strategy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- TECHNOLOGY STACK -->
+    <section class="section" style="padding-top: 0; padding-bottom: 80px;">
+      <div class="section-header">
+        <div class="section-eyebrow">Technology Depth</div>
+        <h2 class="section-title">Production Technology Stack</h2>
+        <p class="section-desc">Deep expertise across the enterprise AI and cloud technology landscape.</p>
+      </div>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">AI / LLM</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">GPT-4o</span>
+            <span class="tag-slate tag">Claude</span>
+            <span class="tag-slate tag">Gemini</span>
+            <span class="tag-slate tag">Llama 3</span>
+            <span class="tag-slate tag">LangChain</span>
+            <span class="tag-slate tag">LlamaIndex</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">ML Infrastructure</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">KubeFlow</span>
+            <span class="tag-slate tag">MLflow</span>
+            <span class="tag-slate tag">Ray</span>
+            <span class="tag-slate tag">Triton</span>
+            <span class="tag-slate tag">Feast</span>
+            <span class="tag-slate tag">Airflow</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">Cloud Platforms</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">AWS</span>
+            <span class="tag-slate tag">GCP</span>
+            <span class="tag-slate tag">Azure</span>
+            <span class="tag-slate tag">SageMaker</span>
+            <span class="tag-slate tag">Vertex AI</span>
+            <span class="tag-slate tag">AzureML</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">Data &amp; Streaming</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">Kafka</span>
+            <span class="tag-slate tag">Spark</span>
+            <span class="tag-slate tag">dbt</span>
+            <span class="tag-slate tag">Snowflake</span>
+            <span class="tag-slate tag">Pinecone</span>
+            <span class="tag-slate tag">Weaviate</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">Infrastructure &amp; DevOps</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">Kubernetes</span>
+            <span class="tag-slate tag">Terraform</span>
+            <span class="tag-slate tag">ArgoCD</span>
+            <span class="tag-slate tag">Prometheus</span>
+            <span class="tag-slate tag">Grafana</span>
+            <span class="tag-slate tag">OpenTelemetry</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom: 14px;">Languages &amp; APIs</div>
+          <div class="tags" style="margin-top: 0;">
+            <span class="tag-slate tag">Python</span>
+            <span class="tag-slate tag">Go</span>
+            <span class="tag-slate tag">TypeScript</span>
+            <span class="tag-slate tag">REST</span>
+            <span class="tag-slate tag">GraphQL</span>
+            <span class="tag-slate tag">gRPC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">&copy; 2025 Vishal Javalkar. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="bio.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="contributions.html">Recognition</a>
+      <a href="mailto:vvjcoder@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
